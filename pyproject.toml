@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jpmorgan-loan-setup-tool"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.12",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jpmorgan_loan_setup_tool"]
