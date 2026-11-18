@@ -14,3 +14,9 @@
 The answer key also carries `agreement_id`, `checked_by` and `checked_date`. These are bookkeeping fields, accepted but not rule-checked. Any other unknown column is rejected.
 
 Check the answer key with: `python scripts/validate_loans.py`
+
+## Validation result
+
+Running `python scripts/validate_loans.py` on the hand-checked answer key prints:
+
+    Hand-Checked Loan Terms Answer Key (20 Agreements).csv: 20 of 20 rows passed
